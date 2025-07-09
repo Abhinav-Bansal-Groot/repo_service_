@@ -18,7 +18,7 @@ namespace repo_service.Controllers
         {
             _unitOfWork = unitOfWork;
         }
-
+        // pagination done here 
         [HttpGet("Employees")]
         public async Task<ActionResult<CommonResponse<IEnumerable<Response_Model>>>> GetAll(
             [FromQuery] int pageNumber = 1,
